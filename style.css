@@ -32,16 +32,12 @@
     color: var(--primary-color);
   }
   
-  header nav {
-    margin: 7px 0;
-  }
 
   header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
   }
 
   header nav ul li a {
@@ -50,7 +46,8 @@
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0,  0.5);
   }
-
+ 
+  /* Header links click properties*/
   header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -58,6 +55,7 @@
     text-shadow: none;
   }
 
+  /* Name in header style*/
   header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -66,6 +64,7 @@
     text-shadow: 0 0 10px rgba(0, 0, 0,  0.5);
   }
 
+  /* All section names are h3 */
   h3 {
 flex-basis: 20%;
 text-align: left;
@@ -74,14 +73,11 @@ font-size: 46px;
 flex: 1 30%;
 
   }
-  
-  
-  .subtitle {
-      text-align: left;
-      margin: 20px;
+
+  .about-me {
+      text-align: center;
   }
-
-
+  
 
   body {
     color: var(--tertiary-color);
@@ -96,21 +92,20 @@ flex: 1 30%;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
+/* Phone number, email, github */
   .contact-info div {
-    
     line-height: 1.5;
     text-align: right;
     color: var(--primary-color);
   }
+
+/* add space between contact info */
+  .contact-info h3, div, p {
+    padding: 10px 15px;
+  }
   
 
   /* Sections */
-
-section {
-    padding: 60px;
-    
-  }
 
     
 
@@ -123,19 +118,22 @@ section {
     background-color: var(--primary-color);
     flex: 2 70%;
     align-items: center;
+    padding: 50px;
   }
 
-
+/* info in each section */
 section p {
     color:var(--tertiary-color);
     font-size: 18px;
   }
 
-  .projects {
+ .projects {
       text-align: left;
       max-width: 75%;
       flex-basis: 60%;
       flex-wrap: wrap;
+      display: inline-flex;
+      justify-content: space-between;
   }
 
     
@@ -148,7 +146,26 @@ section p {
     padding: 5px;
     background-position: center;
     flex-wrap: wrap;
-    z-index: 9999;
+   
+}
+
+
+.run-buddy {
+    background-image: url("./hero-bg.jpg");
+    background-size: cover;
+
+}
+
+.run-buddy:hover {
+    font-size: larger;
+}
+
+.robot-gladiators:hover {
+    font-size: larger;
+}
+
+.horiseon:hover {
+    font-size: larger;
 }
 
 
@@ -159,25 +176,19 @@ section p {
   
 
   .contact-info > * {
-    flex: 1;
     margin: 15px;
   }
 
   .contact-info {
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
     flex-wrap: wrap;
     text-align: center;
   }
 
 
-  .contact-info p  {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
-    color: white;
-  
+  .contact-info h3 p  {
+    justify-content: space-between;
+    display: inline-flex;
   }
   
 
