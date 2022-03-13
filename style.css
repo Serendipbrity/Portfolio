@@ -5,10 +5,11 @@
     box-sizing: border-box;
   }
 
+  /* color variables*/
   :root {
-    --primary-color:#FCD0A1;
-    --secondary-color: #63535B;
-    --tertiary-color: #6082b6;
+    --primary-color:#EDEBD7;
+    --secondary-color:#3E5C76;
+    --tertiary-color:#0D1321;
   }
   
   header {
@@ -27,28 +28,29 @@
     z-index: 9999;
   }
 
+  /* name and links  */
   header a {
     text-decoration: none;
     color: var(--primary-color);
   }
   
-
+/* links placements */
   header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
-
+/* link designs*/
   header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight: light;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0,  0.5);
   }
  
-  /* Header links click properties*/
-  header nav ul li a:hover {
+   /* Header links click properties*/
+   header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
@@ -73,25 +75,108 @@ font-size: 46px;
 flex: 1 30%;
 
   }
-
-  .about-me {
-      text-align: center;
-  }
   
-
-  body {
+/* font for everything*/
+   body {
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
+  } 
+
+  
+
+  /* Each Entire Section */
+section {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    flex: 2 70%;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(237, 235, 215, .75);
   }
 
-  .contact-info {
+
+
+
+  /* info in each section */
+.content {
+    text-align: center;
+    max-width: 75%;
+    align-items: flex;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px;
+    background-position: center;
+    flex-wrap: wrap;
+    color:var(--tertiary-color);
+    font-size: 18px;
+}
+
+.projects {
+    text-align: left;
+    max-width: 75%;
+    flex-basis: 60%;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: space-between;
+    
+}
+
+.run-buddy {
+    background-image: url("./hero-bg.jpg");
+    background-attachment: fixed;
+    background-position: 80%;
+    background-size: contain;
+}
+
+.run-buddy:hover {
+    font-size: larger;
+}
+
+
+.robot-gladiators {
+    background-image: url("./Screen\ Shot\ 2022-03-13\ at\ 1.28.28\ PM.png");
+    background-attachment: fixed;
+    background-position: 80%;
+    background-size: contain;
+}
+
+.robot-gladiators:hover {
+    font-size: larger;
+
+}
+
+.horiseon {
+    background-image: url("./digital-marketing-meeting.jpg");
+    background-attachment: fixed;
+    background-position: 80%;
+    background-size: contain;
+}
+
+.horiseon:hover {
+    font-size: larger;
+}
+
+  .contact-info > * {
+    margin: 15px;
+  }
+
+
+
+   /* contact info placement/design */
+   .contact-info {
     background: var(--secondary-color);
     width: 100%;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: center;
   }
+  
 /* Phone number, email, github */
   .contact-info div {
     line-height: 1.5;
@@ -103,95 +188,11 @@ flex: 1 30%;
   .contact-info h3, div, p {
     padding: 10px 15px;
   }
-  
-
-  /* Sections */
-
-    
-
-section {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: var(--primary-color);
-    flex: 2 70%;
-    align-items: center;
-    padding: 50px;
-  }
-
-/* info in each section */
-section p {
-    color:var(--tertiary-color);
-    font-size: 18px;
-  }
-
- .projects {
-      text-align: left;
-      max-width: 75%;
-      flex-basis: 60%;
-      flex-wrap: wrap;
-      display: inline-flex;
-      justify-content: space-between;
-  }
-
-    
-.content {
-    text-align: center;
-    max-width: 75%;
-    align-items: flex;
-    justify-content: space-between;
-    display: flex;
-    padding: 5px;
-    background-position: center;
-    flex-wrap: wrap;
-   
-}
-
-
-.run-buddy {
-    background-image: url("./hero-bg.jpg");
-    background-size: cover;
-
-}
-
-.run-buddy:hover {
-    font-size: larger;
-}
-
-.robot-gladiators:hover {
-    font-size: larger;
-}
-
-.horiseon:hover {
-    font-size: larger;
-}
-
-
-  .contact-info {
-    background-color: var(--secondary-color);
-    
-  }
-  
-
-  .contact-info > * {
-    margin: 15px;
-  }
-
-  .contact-info {
-    display: inline-flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
 
   .contact-info h3 p  {
     justify-content: space-between;
     display: inline-flex;
   }
-  
-
   
 
   /* Media Query For Smaller Desktop Screens And Smaller */
