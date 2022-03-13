@@ -92,7 +92,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--primary-color);
-    flex: 2 70%;
+    /* flex: 2 70%; */
     align-items: center;
     padding: 50px;
     background-color: rgba(237, 235, 215, .75);
@@ -105,11 +105,9 @@ section {
 .content {
     text-align: center;
     max-width: 75%;
-    align-items: flex;
     justify-content: space-between;
     display: flex;
     padding: 5px;
-    background-position: center;
     flex-wrap: wrap;
     color:var(--tertiary-color);
     font-size: 18px;
@@ -117,12 +115,12 @@ section {
 
 .projects {
     text-align: left;
-    max-width: 75%;
     flex-basis: 60%;
     flex-wrap: wrap;
     display: inline-flex;
     justify-content: space-between;
-    
+    height: 100px;
+    width: 200px;
 }
 
 .run-buddy {
@@ -130,10 +128,13 @@ section {
     background-attachment: fixed;
     background-position: 80%;
     background-size: contain;
+    
 }
 
 .run-buddy:hover {
-    font-size: larger;
+    /* font-size: larger; */
+   /* height: 125px; */
+   width: 225px;
 }
 
 
