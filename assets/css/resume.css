@@ -1,0 +1,135 @@
+:root {
+    ---primary-color: rgba(0, 29, 61, 1);
+    /* ---primary-color: rgba(33, 33, 33, .95); */
+    ---secondary-color: rgba(204, 160, 0, .8);
+}
+/* ---header--- */
+.jumbotron {
+    background-color: var(---primary-color);
+    
+}
+
+
+
+
+.both {
+   
+    margin-right: 60px;
+    color: var(---secondary-color);
+    border-bottom: 3px solid var(---primary-color);
+    /* background-image: url("./leaves.jpeg"); */
+    /* background-size:cover; */
+    /* background-position: center; */
+    /* opacity: .1; */
+    
+}
+
+
+#name {
+    margin-top: 10%;
+    float: right;
+    font-size: 160px;
+    font-weight: 100;
+  
+}
+
+#career {
+    float: right;
+    font-size: 60px;
+    font-weight:400;
+    border-bottom: 2px solid;   
+    padding-left: 30px;
+  
+}
+
+
+
+#me {
+    max-width: 30%;
+}
+
+/* --- header end --- */
+
+
+.left {
+    margin-right: 45px;
+    padding-bottom: 120%;
+    padding-top: 60px;
+    padding-right: 15%;
+    padding-left: 15%;
+    background-color: rgba(236,236,236,.6);
+    border-right: 7px solid rgba(0, 29, 61, .9);
+ } 
+
+ /* #contact {
+     margin-bottom: ;
+ } */
+ 
+ #skills {
+    
+ }
+
+ #relevant {
+    
+ }
+
+ .right {
+     padding: 60px;
+     padding-left: 100px;
+
+ }
+
+ h2 {
+     margin-bottom: 8px;
+     border-bottom: solid rgba(108, 122, 137, .5)
+ }
+
+#driver,
+ #amazon {
+     margin-top: 20px;
+ } 
+ #solar,
+ #energy,
+ #server,
+ #kabuki,
+ #student,
+ #admin
+ {
+    margin-top: 70px;
+}
+
+
+ li,
+  a,
+   p {
+     padding-left: 15px;
+     margin-top: 5px;
+     font-size: 20px;
+ }
+ li {
+     color: var(---secondary-color);
+    
+ }
+
+
+ li
+  span {
+     color: black;
+ }
+
+ .cert, .hs {
+    font-size: 20px;
+}
+
+
+ footer {
+    font-size: 20px;
+    padding: 30px;
+    background-color: var(---primary-color);
+    color: white;
+    position: relative;
+ }
+
+ 
+
+

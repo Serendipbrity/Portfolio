@@ -28,8 +28,18 @@
     z-index: 9999;
   }
 
+  body {
+    background-image: url("./images/AZ.jpeg");
+     background-size:cover; 
+     background-position: center;
+  }
+
 .about {
   font-size: 30px;
+}
+
+#summary {
+  font-size: 25px;
 }
 
 #me {
@@ -42,7 +52,7 @@
 #content {
   float: right;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 60px;
 }
   /* name and links  */
   header a {
