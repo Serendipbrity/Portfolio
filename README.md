@@ -1,14 +1,16 @@
-# Brittani Court's Portfolio
+# Brittani Court's Resume/Portfolio
 
 ## Purpose
-A website displaying projects I've worked on.
+A website displaying my resume and projects I've worked on.
 
 ## Built With
 * HTML
 * CSS
+* Bootstrap
 
 ## Website link
 https://serendipbrity.github.io/Portfolio/
-## Github Link
 
+
+## Github Link
 https://github.com/Serendipbrity/Portfolio
